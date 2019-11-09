@@ -1,5 +1,5 @@
 def reverse_each_word(string)
-    string.split.each {|sentence| sentence.reverse}.join(" ")
+    string.split.collect {|sentence| sentence.reverse}.join(" ")
 end
 
 #string needs to be converted into an array. Then we need to convert that
